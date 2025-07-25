@@ -10,15 +10,12 @@ def solution(X, Y):
     
     if not cnt:
         return "-1"
-#     else:
-#         answer = ''
-#         for i in range(9,-1,-1):
-#             answer += (str(i)*cnt[str(i)])
-        
-#         if int(answer) == 0:
-#             return "0"
-#         else:
-#             return answer
- 
-    answer = ''.join(d * cnt[d] for d in reversed("0123456789"))
-    return "0" if answer[0] == "0" else answer
+    # else:
+    #     answer = ''.join(sorted(cnt.elements(), reverse=True))
+    #     if int(answer) == 0:
+    #         return "0"
+    #     else:
+    #         return answer
+    
+    
+    return ''.join(sorted(cnt.elements(), reverse=True))
