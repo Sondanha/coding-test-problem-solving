@@ -1,3 +1,11 @@
+# def solution(players, callings):
+    
+#     for i in callings:
+#         n = players.index(i)
+#         players[n-1], players[n] = players[n], players[n-1]
+
+#     return players
+
 def solution(players, callings):
     
     player_key_dict = {s:i for i, s in enumerate(players)} # 이름 key 
